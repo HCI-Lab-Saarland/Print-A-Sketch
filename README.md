@@ -1,5 +1,5 @@
 # Print-A-Sketch
-This is an Arduino library for Print-A-Sketch, an open-source handheld printer prototype for sketching circuits and sensors. This library provides the basic functionality of the printer, which can be achieved solely with an Arduino. The functions provided by the addition of the RGB camera which requires external processing on a PC are not included here, but we are open to questions for those interested to explore more.  
+This is an Arduino library for Print-A-Sketch, an open-source handheld printer prototype for sketching circuits and sensors. This library provides the basic functionality of the printer, which can be achieved solely with an Arduino. The functions provided by the addition of the RGB camera which require external processing on a PC are not included here, but we are open to questions for those interested to explore more.  
 For more information on the project, visit our [website](https://hci.cs.uni-saarland.de/print-a-sketch/).
 
 ### Hardware
