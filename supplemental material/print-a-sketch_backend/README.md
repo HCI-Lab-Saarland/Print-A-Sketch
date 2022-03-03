@@ -4,7 +4,7 @@
 ## Overview
 
 This is the backend interface of [Print-A-Sketch]([https://hci.cs.uni-saarland.de/wp-content/uploads/projects/digital_fabrication_technologies/Print-A-Sketch/Pourjafarian_CHI22_Print-A-Sketch.pdf]). 
-It serves as link to the Arduino microcontroller by using a serial protocol to control the printhead, analyze the sensor data, and support adaptive printing. 
+It serves as a link to the Arduino microcontroller by using a serial protocol to control the printhead, analyze the sensor data, and support adaptive printing. 
 
 ## Requirements
 Assuming your hardware setup is working by following the instructions here in this [repository](https://github.com/HCI-Lab-Saarland/Print-A-Sketch) and the implementation section in the [paper](([https://hci.cs.uni-saarland.de/wp-content/uploads/projects/digital_fabrication_technologies/Print-A-Sketch/Pourjafarian_CHI22_Print-A-Sketch.pdf])), you are ready to install dependencies of the software. 
