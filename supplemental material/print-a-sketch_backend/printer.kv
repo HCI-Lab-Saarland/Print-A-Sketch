@@ -1,0 +1,85 @@
+
+<MyLayout>:
+    on : on
+    send : send
+
+    image : image
+    pattern_image : pattern_image
+
+
+    BoxLayout:
+        orientation: 'vertical'
+
+
+        BoxLayout:
+            size_hint : 1,.1
+
+            ToggleButton:
+                id : on
+                text: 'OFF'
+                background_color :(1, 0, 0, 1)
+                on_press : root.toggle_button()
+
+            ToggleButton:
+                id: send
+                text: 'Send Data'
+                disabled : True
+                on_press : root.send_button()
+
+
+        BoxLayout:
+            orientation : 'horizontal'
+
+            Image:
+                id: image
+                source : ""
+                allow_stretch: True
+                keep_ratio: True
+                resolution: (root.width, root.height)
+            Image:
+                id: pattern_image
+                source : ""
+                allow_stretch: True
+                keep_ratio: True
+
+        BoxLayout:
+            size_hint : 1,.1
+
+            Button:
+                id : capture
+                text: 'Capture'
+                background_color :(1, 0, 0, 1)
+                on_press : root.capture()
+
+            Button:
+                id: load
+                text: 'Open'
+                on_release: root.load()
+                background_color :(1, 0, 0, 1)
+
+
+<LoadDialog>:
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: "vertical"
+        FileChooserListView:
+            id: filechooser
+            path: '/Users/sina/Documents/Printer/res'
+        BoxLayout:
+            size_hint_y: None
+            height: 30
+            Button:
+                text: "Cancel"
+                on_release: root.cancel()
+            Button:
+                text: "Load"
+                on_release: root.load(filechooser.path, filechooser.selection)
+                on_release: root.cancel()
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+kivy
+opencv2
+numpy
+serial
